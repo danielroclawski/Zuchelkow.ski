@@ -1,3 +1,27 @@
+#container{
+    color: black;
+}
+#header{
+    color: antiquewhite;
+    width: 80%;
+    height: 20%;
+}
+#menu{
+    color: aquamarine;
+    width: 80%;
+    height: 20%;
+}
+#content{
+    color: blueviolet;
+    width: 80%;
+    height: 20%;
+}
+#footer{
+    color: chartreuse;
+    width: 80%;
+    height: 20%;
+}
+
 h1{
     color: aqua;
 }
