@@ -11,17 +11,13 @@
         <div id="logo">
             <img src="logo-top.png"  class="obr" >
         </div>
-        <div id="menu">
-            <ul>
-                <li><a href="">Aktualności</a></li>
-                <li><a href="">O nas</a></li>
-                <li><a href="">Oferta</a></li>
-                <li><a href="">Sprzęt</a></li>
-                <li><a href="">Kontakt</a></li>
-            </ul>
-            
-
-        </div>
+        <div class="navbar">
+        <a href="" class="navbar-brand">Aktualności</a>
+        <a href="#onas" class="navbar-item">O nas</a>
+        <a href="{% url 'about' %}" class="navbar-item">Oferta</a>
+        <a href="{% url 'about' %}" class="navbar-item">Sprzęt</a>
+        <a href="{% url 'about' %}" class="navbar-item">Kontakt</a>
+    </div>
         <div id="aktualnosci"></div>
         <div id="onas"></div>
         <div id="oferta"></div>

@@ -14,12 +14,13 @@ html, body {
      
     div#logo {
     width: 100%; 
-    min-height: 20%; 
-    background: blanchedalmond;
+    /*min-height: 20%;*/ 
+    background: whitesmoke;
     padding: 0;
     margin: 0 auto;
     align-items: center;
     text-align: center;
+    position:fixed;
     }
         img.obr{
               max-width: 60%;
@@ -27,20 +28,60 @@ html, body {
               margin-top: 5px;
              }
    
-    div#menu {
+    div.navbar {
         width: 100%; 
-        min-height: 20%; 
-        background: green;
+        /*min-height: 20%;*/ 
+        background: whitesmoke;
         padding: 0;
         margin: 0 auto;
         text-align: center;
         }
-        ul{
-            background-color:azure;
+        .navbar {
+            background-color: lightslategray;
+            font-size: 36px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /*overflow: hidden;*/
+            /*padding: 8px 5px 8px 5px;*/
+
+            
         }
-        li{
-            display: inline;
-           
+        
+            .navbar a {
+                margin: -5px;
+                text-decoration: none;
+                color: inherit;
+                
+               /* border-right: 4px solid;
+                /*border-radius: 5px;*/
+                color: green;
+                border-color: green;
+                padding-right: 10px;
+                padding-left: 10px;
+                transition: 1s;
+            }
+            .navbar a:hover{
+                text-decoration: none;
+                color: inherit;
+                
+               /* border-right: 4px solid;
+                /*border-radius: 5px;*/
+                color: whitesmoke;
+                border-color: whitesmoke;
+                padding-right: 10px;
+               padding-left: 10px;
+                background-color: green;
+            }
+        
+        .navbar-brand {
+            font-size: 1.0em;
+            font-weight: 600;
+        }
+        
+        .navbar-item {
+            /*font-variant: small-caps;
+            margin-left: 30px;*/
+            font-size: 1.0em;
+            font-weight: 400;
         }
         a.menulink{
             text-decoration: none;
@@ -50,7 +91,7 @@ html, body {
         }
         div#aktualnosci{
             width: 100%; 
-            min-height: 60%; 
+            min-height: 90%; 
             background: blue;
             padding: 0;
             margin: 0 auto;
