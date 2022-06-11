@@ -11,42 +11,58 @@ html, body {
     margin: 0 auto;
     padding: 0;
     }
-     
+    div#header{
+        width: 100%;
+        height: auto;
+        position: fixed;
+        transition: 2s;
+    } 
     div#logo {
-    width: 100%; 
+    width: 40%; 
     /*min-height: 20%;*/ 
     background: whitesmoke;
     padding: 0;
     margin: 0 auto;
     align-items: center;
     text-align: center;
-    position:fixed;
+    float: left;
+   
+    }
+    div#menu{
+        width: 60%;
+        float: right;
+        height: 100%;
     }
         img.obr{
-              max-width: 60%;
-              min-width: 20%;
-              margin-top: 5px;
+            max-width: 70%;
+            min-width: 70%;
+            margin-top: 5px;
              }
-   
-    div.navbar {
-        width: 100%; 
+   .nav--up{
+        top: -1000px;
+    }
+    .nav {
+        /*width: 100%; 
         /*min-height: 20%;*/ 
         background: whitesmoke;
         padding: 0;
+        /*top: 0;*/
+        font-size: 36px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
         margin: 0 auto;
         text-align: center;
+        
         }
-        .navbar {
+        /*.navbar {
             background-color: lightslategray;
-            font-size: 36px;
-            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            /*overflow: hidden;*/
+           /*overflow: hidden;*/
             /*padding: 8px 5px 8px 5px;*/
 
             
-        }
         
-            .navbar a {
+        
+            .nav a {
                 margin: -5px;
                 text-decoration: none;
                 color: inherit;
@@ -59,7 +75,7 @@ html, body {
                 padding-left: 10px;
                 transition: 1s;
             }
-            .navbar a:hover{
+            .nav a:hover{
                 text-decoration: none;
                 color: inherit;
                 
@@ -92,7 +108,7 @@ html, body {
         div#aktualnosci{
             width: 100%; 
             min-height: 90%; 
-            background: blue;
+            background: whitesmoke;
             padding: 0;
             margin: 0 auto;
         }
