@@ -4,25 +4,33 @@
         <title>Żuchelkow.ski</title>
         <link rel="stylesheet" href="style.css">
         <link rel="shortcut icon" href="minilogo.png">
+       
     </head>
     
 <body>
     <div id="kontener">
+    <div id="header">
         <div id="logo">
             <img src="logo-top.png"  class="obr" >
         </div>
-        <div class="navbar">
+        <div id="menu">
+        <nav class="nav">
+            
         <a href="" class="navbar-brand">Aktualności</a>
         <a href="#onas" class="navbar-item">O nas</a>
         <a href="{% url 'about' %}" class="navbar-item">Oferta</a>
         <a href="{% url 'about' %}" class="navbar-item">Sprzęt</a>
         <a href="{% url 'about' %}" class="navbar-item">Kontakt</a>
+        </nav>
     </div>
+    <script src="ukrywanieNavbar.js"></script>
+     </div>   
         <div id="aktualnosci"></div>
         <div id="onas"></div>
         <div id="oferta"></div>
         <div id="sprzet"></div>
         <div id="stopka"></div>
     </div>
+
     </body>
 </html>
