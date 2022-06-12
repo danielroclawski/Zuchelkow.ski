@@ -12,10 +12,11 @@ html, body {
     padding: 0;
     }
     div#header{
+        background-color: whitesmoke;
         width: 100%;
         height: auto;
         position: fixed;
-        transition: 2s;
+        transition:top 2s;
     } 
     div#logo {
     width: 40%; 
@@ -40,6 +41,7 @@ html, body {
              }
    .nav--up{
         top: -1000px;
+        transition:top 2s;
     }
     .nav {
         /*width: 100%; 
@@ -73,6 +75,8 @@ html, body {
                 border-color: green;
                 padding-right: 10px;
                 padding-left: 10px;
+                padding-top: 10px;
+                padding-bottom: 10px;
                 transition: 1s;
             }
             .nav a:hover{
@@ -97,7 +101,7 @@ html, body {
             /*font-variant: small-caps;
             margin-left: 30px;*/
             font-size: 1.0em;
-            font-weight: 400;
+            font-weight: 600;
         }
         a.menulink{
             text-decoration: none;
