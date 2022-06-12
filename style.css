@@ -176,12 +176,15 @@ html, body {
     .SliderZdjecia{
         
         display: none;
-        width: 900px;
-        height: 500px;
+        max-width: 80%;
+       /* height: 500px;*/
+       margin-left: auto;
+       margin-right: auto;
     }
     div.Slider{
         padding-top: 200px;
-        width: fit-content;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
+        text-align: center;
     }
