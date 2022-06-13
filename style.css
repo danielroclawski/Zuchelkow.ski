@@ -3,8 +3,20 @@ html, body {
     height: 100%;
     padding: 0;
     margin: 0 auto;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
     }
-     
+     h2{
+        margin: 0;
+        padding: 40px;
+        font-weight: 400;
+     }
+     h4{
+        margin: 0;
+        padding-top: 10px;
+        font-weight: 500;
+        
+     }
     div#kontener {
     width: 100%; 
     height: 100%; 
@@ -12,15 +24,16 @@ html, body {
     padding: 0;
     }
     div#header{
+        background-color: ghostwhite;
         width: 100%;
         height: auto;
         position: fixed;
-        transition: 2s;
+        transition:top 2s;
     } 
     div#logo {
     width: 40%; 
     /*min-height: 20%;*/ 
-    background: whitesmoke;
+    background: ghostwhite;
     padding: 0;
     margin: 0 auto;
     align-items: center;
@@ -40,15 +53,15 @@ html, body {
              }
    .nav--up{
         top: -1000px;
+        transition:top 2s;
     }
     .nav {
         /*width: 100%; 
         /*min-height: 20%;*/ 
-        background: whitesmoke;
+        background: ghostwhite;
         padding: 0;
         /*top: 0;*/
         font-size: 36px;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         
         margin: 0 auto;
         text-align: center;
@@ -58,8 +71,14 @@ html, body {
             background-color: lightslategray;
            /*overflow: hidden;*/
             /*padding: 8px 5px 8px 5px;*/
-
-            
+        @media screen and (min-width: 480px) {
+            .nav{display: block !important;}
+        }
+        @media screen and (max-width:480px) {
+            .nav {display: none;}
+            .nav a {width: 100%;padding: 2% 0;} 
+            #menu-button {display: block;}
+        }  
         
         
             .nav a {
@@ -73,6 +92,8 @@ html, body {
                 border-color: green;
                 padding-right: 10px;
                 padding-left: 10px;
+                padding-top: 10px;
+                padding-bottom: 10px;
                 transition: 1s;
             }
             .nav a:hover{
@@ -97,7 +118,7 @@ html, body {
             /*font-variant: small-caps;
             margin-left: 30px;*/
             font-size: 1.0em;
-            font-weight: 400;
+            font-weight: 600;
         }
         a.menulink{
             text-decoration: none;
@@ -115,29 +136,55 @@ html, body {
         div#onas{
             width: 100%; 
             min-height: 100%; 
-            background: bisque;
-            padding: 0;
+            background: whitesmoke;           
             margin: 0 auto;
+            text-align: justify;
         }
         div#oferta{
             width: 100%; 
             min-height: 100%; 
-            background: darkcyan;
+            background: whitesmoke;
             padding: 0;
             margin: 0 auto;
+            text-align: justify;
         }
         div#sprzet{
             width: 100%; 
             min-height: 80%; 
-            background: hotpink;
+            background: whitesmoke;
             padding: 0;
             margin: 0 auto;
+            text-align: justify;
         }
     div#stopka{
             width: 100%; 
             min-height: 10%; 
-            background: pink;
+            background: grey;
             padding: 0;
             margin: 0 auto;
+            text-align: center;
     }
-  
+    img.obrSprzet{
+        width: 300px;
+        height: 300px;
+        padding: 20px;
+    }
+    table{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .SliderZdjecia{
+        
+        display: none;
+        max-width: 80%;
+       /* height: 500px;*/
+       margin-left: auto;
+       margin-right: auto;
+    }
+    div.Slider{
+        padding-top: 200px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }

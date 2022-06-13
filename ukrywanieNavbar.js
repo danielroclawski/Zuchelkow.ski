@@ -1,27 +1,10 @@
-const nav = document.getElementById('header');
-
-let previousScrollTop;
-let isScrolling;
-
-const hasScrolled = () => {
-  
-  const scrollTop = window.scrollY;
-  
-  if (scrollTop > previousScrollTop){
-    nav.classList.add('nav--up');
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("header").style.top = "0";
   } else {
-    nav.classList.remove('nav--up');
+    document.getElementById("header").style.top = "-200px";
   }
-    
-  previousScrollTop = scrollTop;
-  
+  prevScrollpos = currentScrollPos;
 }
-
-document.addEventListener('scroll', () => isScrolling = true);
-
-setInterval(() => {
-  if (isScrolling) {
-    hasScrolled();
-    isScrolling = false;
-  }
-}, 100);
