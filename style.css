@@ -1,5 +1,5 @@
 html, body {
-    background: white;
+    background: whitesmoke;
     height: 100%;
     padding: 0;
     margin: 0 auto;
@@ -29,7 +29,7 @@ html, body {
     padding: 0;
     }
     div#header{
-        background-color: ghostwhite;
+        background-color: #008000;
         width: 100%;
         height: auto;
         position: fixed;
@@ -67,7 +67,7 @@ html, body {
         padding: 0;
         /*top: 0;*/
         font-size: 36px;
-        
+        padding-bottom: 10px;
         margin: 0 auto;
         text-align: center;
         
@@ -133,7 +133,7 @@ html, body {
         }
         div#aktualnosci{
             width: 100%; 
-            min-height: 90%; 
+            min-height: 100%; 
             background: whitesmoke;
             padding: 0;
             margin: 0 auto;
@@ -164,7 +164,7 @@ html, body {
     div#stopka{
             width: 100%; 
             min-height: 10%; 
-            background: grey;
+            background: whitesmoke;
             padding: 0;
             margin: 0 auto;
             text-align: center;
@@ -182,7 +182,7 @@ html, body {
     .SliderZdjecia{
         
         display: none;
-        max-width: 80%;
+        max-width: 100%;
        /* height: 500px;*/
        margin-left: auto;
        margin-right: auto;
@@ -194,11 +194,19 @@ html, body {
       -webkit-box-shadow: 10px 10px 5px #ccc;
       -khtml-box-shadow: 10px 10px 5px #ccc;
       z-index: 1000;
+      transition: 3s;
     }
     div.Slider{
-        padding-top: 80px;
-        width: 90%;
+        padding-top: 50px;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
         text-align: center;
+        transition:top 2s;
+    }
+    hr{
+        width: 90%;
+        height: 2px;
+        background-color: #008000;
+        border: 0px;
     }
