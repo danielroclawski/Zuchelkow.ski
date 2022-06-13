@@ -1,10 +1,15 @@
 html, body {
-    background: yellow;
+    background: white;
     height: 100%;
     padding: 0;
     margin: 0 auto;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
+    }
+    h1{
+        margin: 0;
+        padding: 40px;
+        font-weight: 500;
     }
      h2{
         margin: 0;
@@ -134,14 +139,14 @@ html, body {
             margin: 0 auto;
         }
         div#onas{
-            width: 100%; 
+            width: 70%; 
             min-height: 100%; 
             background: whitesmoke;           
             margin: 0 auto;
             text-align: justify;
         }
         div#oferta{
-            width: 100%; 
+            width: 70%; 
             min-height: 100%; 
             background: whitesmoke;
             padding: 0;
@@ -149,7 +154,7 @@ html, body {
             text-align: justify;
         }
         div#sprzet{
-            width: 100%; 
+            width: 70%; 
             min-height: 80%; 
             background: whitesmoke;
             padding: 0;
@@ -165,9 +170,10 @@ html, body {
             text-align: center;
     }
     img.obrSprzet{
-        width: 300px;
-        height: 300px;
+        max-width: 300px;
+        max-height: 300px;
         padding: 20px;
+        text-align: center;
     }
     table{
         margin-left: auto;
@@ -180,10 +186,18 @@ html, body {
        /* height: 500px;*/
        margin-left: auto;
        margin-right: auto;
+       border: solid 1px;
+       border-top-left-radius: 30px;
+       border-bottom-right-radius: 30px;
+       box-shadow: 10px 10px 5px #ccc;
+      -moz-box-shadow: 10px 10px 5px #ccc;
+      -webkit-box-shadow: 10px 10px 5px #ccc;
+      -khtml-box-shadow: 10px 10px 5px #ccc;
+      z-index: 1000;
     }
     div.Slider{
-        padding-top: 200px;
-        width: 100%;
+        padding-top: 80px;
+        width: 90%;
         margin-left: auto;
         margin-right: auto;
         text-align: center;
