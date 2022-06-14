@@ -76,15 +76,30 @@ html, body {
             background-color: lightslategray;
            /*overflow: hidden;*/
             /*padding: 8px 5px 8px 5px;*/
-        @media screen and (min-width: 480px) {
+        @media screen and (min-width: 1197px) {
             .nav{display: block !important;}
+            button{ display: none;}
+            
         }
-        @media screen and (max-width:480px) {
+        @media screen and (max-width:1197px) {
             .nav {display: none;}
             .nav a {width: 100%;padding: 2% 0;} 
             #menu-button {display: block;}
+            div#menu{width: 20%;}
+            div#logo{width: 80%;}
+            
         }  
-        
+        .menu-button{
+            border: 0px;
+            background: url(BtnNav.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 50px 50px;
+            color: #008000;
+            width: 50px;
+            height: 50px;
+            float: right;
+        }
         
             .nav a {
                 margin: -5px;
