@@ -8,7 +8,7 @@ html, body {
     }
     h1{
         margin: 0;
-        padding: 40px;
+        /*padding: 40px;*/
         font-weight: 500;
     }
      h2{
@@ -34,6 +34,9 @@ html, body {
         height: auto;
         position: fixed;
         transition:top 2s;
+        z-index: 1;
+        box-shadow: 0px 5px 15px;
+
     } 
     div#logo {
     width: 40%; 
@@ -99,6 +102,7 @@ html, body {
             width: 50px;
             height: 50px;
             float: right;
+            cursor: pointer;
         }
         
             .nav a {
@@ -150,15 +154,22 @@ html, body {
             width: 100%; 
             min-height: 100%; 
             background: whitesmoke;
-            padding: 0;
+            padding-top: 100px;
             margin: 0 auto;
         }
         div#onas{
+            padding-top: 100px;
             width: 70%; 
             min-height: 100%; 
             background: whitesmoke;           
             margin: 0 auto;
             text-align: justify;
+            -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+    -webkit-column-width: 200px; /* Chrome, Safari, Opera */
+    -moz-column-width: 200px; /* Firefox */
+    column-width: 200px;
         }
         div#oferta{
             width: 70%; 
@@ -185,8 +196,8 @@ html, body {
             text-align: center;
     }
     img.obrSprzet{
-        max-width: 300px;
-        max-height: 300px;
+        width: 300px;
+        height: 300px;
         padding: 20px;
         text-align: center;
     }
@@ -202,12 +213,9 @@ html, body {
        margin-left: auto;
        margin-right: auto;
        border: solid 1px;
-       border-top-left-radius: 30px;
-       border-bottom-right-radius: 30px;
-       box-shadow: 10px 10px 5px #ccc;
-      -moz-box-shadow: 10px 10px 5px #ccc;
-      -webkit-box-shadow: 10px 10px 5px #ccc;
-      -khtml-box-shadow: 10px 10px 5px #ccc;
+       /*border-top-left-radius: 30px;
+       border-bottom-right-radius: 30px;*/
+       box-shadow: 0px 7px 21px;
       z-index: 1000;
       transition: 3s;
     }
@@ -218,10 +226,61 @@ html, body {
         margin-right: auto;
         text-align: center;
         transition:top 2s;
+        position: relative;
     }
     hr{
         width: 90%;
         height: 2px;
         background-color: #008000;
         border: 0px;
+    }
+
+
+    .w3-black, .w3-hover-black:hover {
+        color: #fff!important;
+        background-color: #000!important;
+    }
+    .w3-display-left {
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        transform: translate(0%,-50%);
+        -ms-transform: translate(-0%,-50%);
+    }
+    .w3-btn, .w3-button {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    .w3-btn, .w3-button {
+        border: none;
+        display: inline-block;
+        padding: 8px 16px;
+        vertical-align: middle;
+        overflow: hidden;
+        text-decoration: none;
+        color: inherit;
+        background-color: inherit;
+        text-align: center;
+        cursor: pointer;
+        white-space: nowrap;
+    }
+   
+    
+    
+    
+    
+    
+    .w3-display-right {
+        position: absolute;
+        top: 50%;
+        right: 0%;
+        transform: translate(0%,-50%);
+        -ms-transform: translate(0%,-50%);
+    }
+    video{
+        width: -webkit-fill-available;
     }
