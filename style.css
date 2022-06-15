@@ -82,16 +82,21 @@ html, body {
         @media screen and (min-width: 1197px) {
             .nav{display: block !important;}
             button{ display: none;}
+            ul{display: none;}
             
         }
         @media screen and (max-width:1197px) {
             .nav {display: none;}
             .nav a {width: 100%;padding: 2% 0;} 
-            #menu-button {display: block;}
-            div#menu{width: 20%;}
+            .menu-button {display: block;}
+            div#menu{width: 20%;height: 0px;}
             div#logo{width: 80%;}
-            
+            #menu-rozw {display: none;}
+            #menu-rozw li {width: 100%; padding: 2% 0;}
         }  
+        #menu-rozw {list-style: none; float: left; width: 100%;}
+        #menu-rozw li {float: left; display: block; padding: 0 1%;}
+        #menu-rozw li a {text-decoration: none; color: #222;}
         .menu-button{
             border: 0px;
             background: url(BtnNav.png);
@@ -166,7 +171,7 @@ html, body {
             text-align: justify;
             -webkit-column-count: 3; /* Chrome, Safari, Opera */
     -moz-column-count: 3; /* Firefox */
-    column-count: 3;
+    column-count: 2;
     -webkit-column-width: 200px; /* Chrome, Safari, Opera */
     -moz-column-width: 200px; /* Firefox */
     column-width: 200px;

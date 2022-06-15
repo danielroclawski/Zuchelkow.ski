@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $("menu-button").click(function(){
-        $('nav').stop().slideToggle(300);
+    $('.menu-button').click(function(){
+        $('#menu-rozw').stop().slideToggle(300);
     })
 })
