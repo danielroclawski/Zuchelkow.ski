@@ -82,8 +82,8 @@ html, body {
         @media screen and (min-width: 1197px) {
             .nav{display: block !important;}
             button{ display: none;}
-            ul{display: none;}
-            
+            ul{display: none; float: inherit; }
+            div#onas{column-count: 3;-webkit-column-count: 3; -moz-column-count: 3;}
         }
         @media screen and (max-width:1197px) {
             .nav {display: none;}
@@ -92,20 +92,51 @@ html, body {
             div#menu{width: 20%;height: 0px;}
             div#logo{width: 80%;}
             #menu-rozw {display: none;}
+            ul{ float: inherit; }
             #menu-rozw li {width: 100%; padding: 2% 0;}
+            div#onas{column-count: 1;-webkit-column-count: 1; -moz-column-count: 1;}
         }  
-        #menu-rozw {list-style: none; float: left; width: 100%;}
-        #menu-rozw li {float: left; display: block; padding: 0 1%;}
-        #menu-rozw li a {text-decoration: none; color: #222;}
+        
+        #menu-rozw {list-style: none; 
+                    float: inherit; 
+                    width: 100%;
+                    background-color: ghostwhite;
+                    font-size: 25px;
+                }
+        #menu-rozw li {float: left; 
+                       display: block;
+                       
+                transition: 1s;
+                
+                    }
+        #menu-rozw li a {text-decoration: none;
+                        color: green;
+                        padding-right: 10px;
+                        padding-left: 10px;
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                        transition: 1s;
+                        width: 100%;
+                        display: block;
+                        }
+            #menu-rozw  a:hover {text-decoration: none;
+                            color: black;
+                            background-color: #008000;
+                            padding-right: 10px;
+                padding-left: 10px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                transition: 1s;
+                           }               
         .menu-button{
             border: 0px;
             background: url(BtnNav.png);
             background-repeat: no-repeat;
             background-position: center;
-            background-size: 50px 50px;
+            background-size: 100px 100px;
             color: #008000;
-            width: 50px;
-            height: 50px;
+            width: 100px;
+            height: 100px;
             float: right;
             cursor: pointer;
         }
@@ -157,7 +188,7 @@ html, body {
         }
         div#aktualnosci{
             width: 100%; 
-            min-height: 100%; 
+            /*min-height: 100%;*/ 
             background: whitesmoke;
             padding-top: 100px;
             margin: 0 auto;
@@ -165,20 +196,20 @@ html, body {
         div#onas{
             padding-top: 100px;
             width: 70%; 
-            min-height: 100%; 
+            /*min-height: 100%;*/ 
             background: whitesmoke;           
             margin: 0 auto;
             text-align: justify;
-            -webkit-column-count: 3; /* Chrome, Safari, Opera */
-    -moz-column-count: 3; /* Firefox */
-    column-count: 2;
-    -webkit-column-width: 200px; /* Chrome, Safari, Opera */
-    -moz-column-width: 200px; /* Firefox */
-    column-width: 200px;
+            /*-webkit-column-count: 3; /* Chrome, Safari, Opera */
+            /*-moz-column-count: 3; /* Firefox */
+             /*column-count: 3;
+             /*-webkit-column-width: 200px; /* Chrome, Safari, Opera */
+            /* -moz-column-width: 200px; /* Firefox */
+            /*column-width: 200px;*/
         }
         div#oferta{
             width: 70%; 
-            min-height: 100%; 
+            /*min-height: 100%;*/ 
             background: whitesmoke;
             padding: 0;
             margin: 0 auto;
@@ -241,18 +272,22 @@ html, body {
     }
 
 
-    .w3-black, .w3-hover-black:hover {
+    .obr-black, .obr-hover-black{
         color: #fff!important;
         background-color: #000!important;
     }
-    .w3-display-left {
+    .obr-black :hover {
+        color: #fff!important;
+        background-color: green!important;
+    }
+    .obr-display-left {
         position: absolute;
         top: 50%;
         left: 0%;
         transform: translate(0%,-50%);
         -ms-transform: translate(-0%,-50%);
     }
-    .w3-btn, .w3-button {
+    .obr-btn, .obr-button {
         -webkit-touch-callout: none;
         -webkit-user-select: none;
         -khtml-user-select: none;
@@ -260,7 +295,7 @@ html, body {
         -ms-user-select: none;
         user-select: none;
     }
-    .w3-btn, .w3-button {
+    .obr-btn, .obr-button {
         border: none;
         display: inline-block;
         padding: 8px 16px;
@@ -272,14 +307,8 @@ html, body {
         text-align: center;
         cursor: pointer;
         white-space: nowrap;
-    }
-   
-    
-    
-    
-    
-    
-    .w3-display-right {
+    }  
+    .obr-display-right {
         position: absolute;
         top: 50%;
         right: 0%;
