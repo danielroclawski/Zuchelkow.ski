@@ -83,7 +83,7 @@ html, body {
             .nav{display: block !important;}
             button{ display: none;}
             ul{display: none; float: inherit; }
-            div#onas{column-count: 3;-webkit-column-count: 3; -moz-column-count: 3;}
+            
         }
         @media screen and (max-width:1197px) {
             .nav {display: none;}
@@ -94,7 +94,7 @@ html, body {
             #menu-rozw {display: none;}
             ul{ float: inherit; }
             #menu-rozw li {width: 100%; padding: 2% 0;}
-            div#onas{column-count: 1;-webkit-column-count: 1; -moz-column-count: 1;}
+            
         }  
         
         #menu-rozw {list-style: none; 
@@ -256,7 +256,8 @@ html, body {
       transition: 3s;
     }
     div.Slider{
-        padding-top: 50px;
+        padding-top: 100px;
+        padding-bottom: 100px;
         width: 100%;
         margin-left: auto;
         margin-right: auto;
