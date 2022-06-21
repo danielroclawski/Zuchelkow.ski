@@ -227,7 +227,7 @@ html, body {
             width: 100%; 
             min-height: 10%; 
             background: whitesmoke;
-            padding: 0;
+            padding-bottom: 50px;
             margin: 0 auto;
             text-align: center;
     }
