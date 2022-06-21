@@ -22,7 +22,7 @@
                     <li><a href="galeria.html">Galeria</a></li>
                     <li><a href="index.html#oferta">Oferta</a></li>
                     <li><a href="index.html#sprzet">Sprzęt</a></li>
-                    <li><a href="#">Kontakt</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
                </ul>  
         <nav class="nav">
             
@@ -31,7 +31,7 @@
         <a href="galeria.html" class="navbar-item">Galeria</a>
         <a href="index.html#oferta" class="navbar-item">Oferta</a>
         <a href="index.html#sprzet" class="navbar-item">Sprzęt</a>
-        <a href="#" class="navbar-item">Kontakt</a>
+        <a href="kontakt.html" class="navbar-item">Kontakt</a>
         </nav>
     </div>
     <script src="js/zmianaMenunaBtn.js"></script>
@@ -40,7 +40,16 @@
         <div id="kontakt">
             Zapraszamy do kontaktu od poniedziałku do soboty w godzinach 8:00-20:00, w pozostałych godzinach preferujemy kontakt mailowy/messanger.<br>
             Marcin Żuchelkowski telefon:<a href="tel:+48691210278">+48 691 210 278</a> email: <a href="mailto:marcin@zuchelkow.ski">marcin@zuchelkow.ski</a> messanger: <a href="http://m.me/USERNAME" target="_blank"></a>
-            
+            <h1>Formularz kontakowy</h1>
+            <form method="post" action="" id="formcontact">
+                <label for="name">Imię i Nazwisko:</label><br>
+                <input type="text" name="name" id="name" class="forms"><br>
+                <label for="email">E-mail:</label><br>
+                <input type="text" name="email" id="email" class="forms"><br>
+                <label for="mess">Treść wiadomści:</label><br>
+                <textarea name="mess" id="mess" class="forms"></textarea><br>
+                <button class="kontakt-button">WYŚLIJ</button>
+            </form>
            
         </div>
         <div id="stopka">
