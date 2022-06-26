@@ -1,3 +1,39 @@
+<?php
+
+header('Content-Type: text/html; charset=utf-8');
+
+session_start();
+
+if(!empty($_POST['name']) and !empty($_POST['email']) and !empty($_POST['message']) and !empty($_POST['captcha'])){
+	
+	if($_POST['captcha']!=$_SESSION['captcha']){
+		die('Kod captcha jest nieprawidłowy');
+		$input = $_POST;
+	}else{
+		$email_odbiorcy = 'example@example.com';
+		
+		$header = 'Reply-To: <'.$_POST['email']."> \r\n"; 
+		$header .= "MIME-Version: 1.0 \r\n"; 
+		$header .= "Content-Type: text/html; charset=UTF-8"; 
+		
+		$wiadomosc = "<p>Dostałeś wiadomość od:</p>";
+		$wiadomosc .= "<p>Imie i nazwisko: " . $_POST['name'] . "</p>";
+		$wiadomosc .= "<p>Email: " . $_POST['email'] . "</p>";
+		$wiadomosc .= "<p>Wiadomość: " . $_POST['message'] . "</p>";
+		
+		$message = '<!doctype html><html lang="pl"><head><meta charset="utf-8">'.$wiadomosc.'</head><body>';
+
+		$subject = 'Wiadomość ze strony...';
+		$subject = '=?utf-8?B?'.base64_encode($subject).'?=';
+	
+		if(mail($email_odbiorcy, $subject, $message, $header)){
+			die('Wiadomość została wysłana');
+		}else{
+			die('Wiadomość nie została wysłana');
+		}
+	}
+}
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -48,6 +84,9 @@
                 <input type="text" name="email" id="email" class="forms"><br>
                 <label for="mess">Treść wiadomści:</label><br>
                 <textarea name="mess" id="mess" class="forms"></textarea><br>
+                <label for="captcha">Przepisz kod captcha</label>
+<img src="captcha.php" alt="Captcha">
+<input type="text" name="captcha" id="captcha" required>
                 <button class="kontakt-button">WYŚLIJ</button>
             </form>
            
