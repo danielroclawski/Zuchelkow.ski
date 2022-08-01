@@ -79,24 +79,24 @@
         </div>
         <script src="js/sliderZdjec.js"></script>
         <div id="kontakt">
-            <h2> Zapraszamy do kontaktu od poniedziałku do soboty w godzinach 8:00-20:00, w pozostałych godzinach preferujemy kontakt mailowy/messanger.<br>
-             Marcin Żuchelkowski telefon:<a href="tel:+48691210278">+48 691 210 278</a> email: <a href="mailto:marcin@zuchelkow.ski">marcin@zuchelkow.ski</a> messanger: <a href="http://m.me/USERNAME" target="_blank">Messenger</a></h2>
-             <h1>Formularz kontakowy</h1>
-             <form method="post"  id="formcontact">
-                 <label for="name">Imię i Nazwisko:</label><br>
-                 <input type="text" name="name" id="name" class="forms" required><br>
-                 <label for="email">E-mail:</label><br>
-                 <input type="text" name="email" id="email" class="forms" required><br>
-                 <label for="mess">Treść wiadomści:</label><br>
-                 <textarea name="message" id="message" class="forms" required></textarea><br>
-                 <label for="captcha">Przepisz kod captcha</label>
-                 <img src="captcha.php" alt="Captcha">
-                 <input type="text" name="captcha" id="captcha" required>
-                 <input type="submit" name="submit" value="Wyślij" class="kontakt-button">
-                 <!----<button class="kontakt-button">WYŚLIJ</button> --->
-             </form>
-            
-         </div>
+           <h2> Zapraszamy do kontaktu od poniedziałku do soboty w godzinach 8:00-20:00, w pozostałych godzinach preferujemy kontakt mailowy/messanger.<br>
+            Marcin Żuchelkowski telefon:<a href="tel:+48691210278">+48 691 210 278</a> email: <a href="mailto:marcin@zuchelkow.ski">marcin@zuchelkow.ski</a> messanger: <a href="http://m.me/USERNAME" target="_blank">Messenger</a></h2>
+            <h1>Formularz kontakowy</h1>
+            <form method="post"  id="formcontact">
+                <label for="name">Imię i Nazwisko:</label><br>
+                <input type="text" name="name" id="name" class="forms" required><br>
+                <label for="email">E-mail:</label><br>
+                <input type="text" name="email" id="email" class="forms" required><br>
+                <label for="mess">Treść wiadomści:</label><br>
+                <textarea name="message" id="message" class="forms" required></textarea><br>
+                <label for="captcha">Przepisz kod captcha</label>
+                <img src="captcha.php" alt="Captcha">
+                <input type="text" name="captcha" id="captcha" required>
+                <input type="submit" name="submit" value="Wyślij" class="kontakt-button">
+                <!----<button class="kontakt-button">WYŚLIJ</button> --->
+            </form>
+           
+        </div>
         <div id="stopka">
             <hr>
             <h4>Prawa autorskie marcin@zuchelkow.ski 2022</h4>
